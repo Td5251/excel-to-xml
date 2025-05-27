@@ -33,12 +33,6 @@ contextBridge.exposeInMainWorld("primaryWindowAPI", {
   //打开登录界面
   showLoginPage: (param: any) => ipcRenderer.send("show-login-page", param),
 
-  //抖音机器人登录
-  robotLogin: (param: any) => ipcRenderer.send("robot-login", param),
-
-  //小红书机器人登录
-  xhsRobotLogin: (param: any) => ipcRenderer.send("xhs-robot-login", param),
-
   //一键登录
   autoLogin: (param: any) => ipcRenderer.send("auto-login", param),
 
@@ -50,15 +44,6 @@ contextBridge.exposeInMainWorld("primaryWindowAPI", {
 
   //执行视频评论
   executeVideoComment: (param: any) => ipcRenderer.send("execute-video-comment", param),
-
-  //执行选中的视频评论
-  executeSelectRobotVideoComment: (param: any) => ipcRenderer.send("execute-select-robot-video-comment", param),
-
-  //执行文章评论
-  executeArticleComment: (param: any) => ipcRenderer.send("execute-article-comment", param),
-
-  //执行选中的文章评论
-  executeSelectRobotArticleComment: (param: any) => ipcRenderer.send("execute-select-robot-article-comment", param),
 
   //开始执行抖音
   startRunDy: (param: any) => ipcRenderer.send("start-run-dy", param),
@@ -77,16 +62,7 @@ contextBridge.exposeInMainWorld("primaryWindowAPI", {
 
   //停止执行
   stopExecute: (param: any) => ipcRenderer.send("stop-execute", param),
-
-  //添加机器人
-  addRobot: (param: any) => ipcRenderer.send("add-robot", param),
-
-  //修改机器人信息
-  updateRobot: (param: any) => ipcRenderer.send("update-robot", param),
-
-  //删除机器人信息
-  deleteRobot: (param: any) => ipcRenderer.send("delete-robot", param),
-  //获取配置
+ //获取配置
   getConfig: () => ipcRenderer.send("get-config"),
 
   //设置配置

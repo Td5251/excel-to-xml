@@ -35,7 +35,7 @@ async function prunePackageJson (buildPath) {
 
 module.exports = {
   packagerConfig: {
-    name: "robot",
+    name: "excel-to-xml",
     appCopyright: "Copyright (C) 2025",
     icon: "./setup/exe.ico",
     // ElectronForge默认会将项目根目录下的所有文件及目录打包到resources
@@ -66,7 +66,7 @@ module.exports = {
     win32metadata: {
       ProductName: "electron-vue-boilerplate",
       CompanyName: "",
-      FileDescription: "robot",
+      FileDescription: "excel-to-xml",
       // 如果安装包需要以管理员权限运行，请打开下面的注释
       // "requested-execution-level": "requireAdministrator",
     },

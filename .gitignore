@@ -6,7 +6,6 @@ out
 .idea
 *.exe
 nsis-3.08/
-/setup/
 
 .vscode
 
